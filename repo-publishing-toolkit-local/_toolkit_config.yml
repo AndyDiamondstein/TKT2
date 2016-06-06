@@ -1,0 +1,164 @@
+# Site wide configuration
+
+### Basic project settings
+title: Toolkit Tester # SPECIFY YOUR PROJECT NAME [REQUIRED]
+description: "Testing the Repo Publishing Toolkit is fun for the whole family." # [HIGHLY RECOMMENDED]
+repo: https://github.com/AndyDiamondstein/ToolkitTester # SPECIFY YOUR GITHUB REPO URL [HIGHLY RECOMMENDED]
+email: test@example.org # SPECIFY CONTACT EMAIL ADDRESS [OPTIONAL]
+website: https://github.com/AndyDiamondstein/ToolkitTester # [REQUIRED IF SHOWING SOCIAL MEDIA BUTTONS] SPECIFY URL WHERE CONTENT IS PUBLISHED -- e.g. www.grpc.io or grpc.github.io/
+copyright-text: # [OPTIONAL] SPECIFY DESIRED COPYRIGHT TEXT -- e.g. "© Site Toolkit authors 2016"
+copyright-text-link: # [OPTIONAL] SPECIFY LINK FOR COPYRIGHT TEXT
+
+### Top nav links
+top-nav-links:
+  # Modify to match content on your site
+  - target: /quick-start/
+    text: Quick lorem
+  - target: /reference/foo.html
+    text: Documentipsum
+  - target: /blog/
+    text: Blog
+  - target: site.repo
+    text: GitHub
+    fa-image: github
+
+### Left nav menu
+left-nav-menu:
+  - name: Quick start
+    target: /quick-start/
+  - name: Reference
+    links:
+      - text: Foo
+        target: /reference/foo.html
+      - text: Bar
+        target: /reference/bar.html
+        sublinks:
+          - text: Baz
+            target: /reference/baz.html
+  - name: Blog
+    target: /blog/
+  - name: GitHub
+    target: site.repo
+
+jumbotron:
+  button-text: Start Using SITENAME
+
+toc:
+  depth: h2,h3,h4
+
+### Footer
+footer:
+  show-footer: true
+  sections:
+    - name: left
+      contents: ["copyright", "email"]
+      link-info:
+        - url: /terms.html
+          text: Terms
+      width: 5
+    - name: middle
+      contents: ["footer-logo"]
+      width: 2
+    - name: right
+      contents: ["share-buttons"]
+      width: 5
+
+### Logos
+# If you have a logo for your site, replace the site.io/images/site-logo.png
+# file with your own logo file. You only need to update the following line
+# if you put your logo in a different location in your repository. This
+# filename is relative to the site.io/images/ directory.
+#
+# You can also identify a version of your logo that displays in the site
+# footer using the footer-logo property. For example, you might display a
+# grayscale version of your logo in the site footer.
+#
+# If you do not have a logo for your site, remove the comment (#) from the
+# line for the text-logo setting. This change makes your project name
+# display in the areas where the logo typically displays.
+logo: /images/logo.png # Set to location of your logo -- e.g. /images/site-logo.png
+footer-logo: /images/grayscale-logo.png # Set to location of your logo for site footer -- e.g. /images/site-logo-grayscale.png
+text-logo: true
+text-logo-font: Kavoon
+
+### Blog
+# Use the following setting to show the full text of each blog post
+# in the postlist template. (You also need to delete or comment out
+# the other excerpt_separator property in this file.)
+#excerpt_separator:
+
+# Use the following setting to only show an excerpt from each blog post
+# in the postlist template.
+excerpt_separator: <!-- more -->
+
+blog:
+  previous_post_text: Previous posts
+  posts_before_list: 3
+
+### Comments
+comments:
+  disqus:
+    display: false
+    show-blog-posts:
+    show-docs:
+    shortname:
+
+### Google Analytics
+analytics:
+  id: # Enter your Google Analytics Tracking ID -- e.g. UA-#######-#
+
+### Content sharing
+# The following sharing services are supported:
+# delicious, digg, facebook,
+# google_plus, linkedin, meneame (only works in footer),
+# nujij (only works in footer), reddit, stumbleupon,
+# tumblr, twitter, weibo
+# These can be specified in the value of either the sharing.services or
+# sharing.right-nav-icons properties. By default, sharing.services is used
+# for the footer and the right nav; that is, if you only specify a value for
+# sharing.services, icons for the specified services are shown in the right
+# nav and footer. However, if you specify a value for sharing.services and
+# sharing.right-nav-icons, then the services listed in sharing.services are
+# shown in the footer, and the services shown in sharing.right-nav-icons are
+# shown in the right nav.
+
+# NOTE ABOUT FACEBOOK BUTTONS:
+# Facebook buttons only display if you have set a value for the
+# sharing.facebook.facebook-app-id property below. (This restriction
+# exists because having a value set is a prerequisite to the button
+# actually working.)
+sharing:
+  right-nav: bottom
+  right-nav-icons: ["facebook", "google_plus", "reddit", "twitter"]
+  facebook:
+    facebook-app-id: # Set to your Facebook app ID
+    follow-button: # None of these settings are supported
+      layout: button # Not supported
+      profile-url: # Not supported
+      show: false # Not supported
+  twitter: # None of these settings are supported
+    data-show-count: false # Not supported
+    data-show-screen-name: false # Not supported
+    data-size:  # Not supported
+    id:  # Not supported
+    show: true # Not supported
+  services: ["delicious", "digg", "reddit", "stumbleupon", "tumblr", "twitter"]
+
+### Sass CSS3 preprocessing
+sass:
+  sass_dir: _sass
+  style: compressed
+
+### Jekyll configuration and Markdown processing
+permalink: /:categories/:title/
+highlighter: pygments
+gems:
+  - jekyll-sitemap
+markdown: redcarpet
+redcarpet:
+  extensions: ["autolink", "fenced_code_blocks", "highlight", "no_intra_emphasis", "prettify", "tables", "with_toc_data"]
+
+# These files and directories in your _site.io/ directory are not converted
+# to HTML and published on your site.
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+

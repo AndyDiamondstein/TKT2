@@ -1,0 +1,106 @@
+/**
+ * Copyright 2016 Google Inc. All Rights Reserved.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+$colorScheme: "teal";
+
+// indigo
+$primaryBrandColorIndigo: #303F9F;
+$primaryBrandColorTeal: #009688;
+
+// Colors
+$primaryBrandColor: #009688;
+$darkerBrandColor: #00695C;
+$lighterBrandColor: #E0F2F1;
+$accentColor: #FF6D00;
+
+@if $colorScheme == "blue" {
+  $primaryBrandColor: #2196F3;
+  $darkerBrandColor: #1976D2;
+  $lighterBrandColor: #E3F2FD;
+  $accentColor: #FF6D00;
+} @else if $colorScheme == "bluegrey" {
+  $primaryBrandColor: #546E7A;
+  $darkerBrandColor: #37474F;
+  $lighterBrandColor: #ECEFF1;
+  $accentColor: #D50000;
+} @else if $colorScheme == "cyan" {
+  $primaryBrandColor: #0097A7;
+  $darkerBrandColor: #006064;
+  $lighterBrandColor: #E0F7FA;
+  $accentColor: #FF6D00;
+} @else if $colorScheme == "green" {
+  $primaryBrandColor: #4CAF50;
+  $darkerBrandColor: #388E3C;
+  $lighterBrandColor: #E8F5E9;
+  $accentColor: #AA00FF;
+} @else if $colorScheme == "indigo" {
+  $primaryBrandColor: #303F9F;
+  $darkerBrandColor: #1A237E;
+  $lighterBrandColor: #E8EAF6;
+  $accentColor: #C51162;
+} @else if $colorScheme == "light blue" {
+  $primaryBrandColor: #039BE5;
+  $darkerBrandColor: #0277BD;
+  $lighterBrandColor: #E1F5FE;
+  $accentColor: #6200EA;
+} @else if $colorScheme == "light green" {
+  $primaryBrandColor: #689F38;
+  $darkerBrandColor: #33691E;
+  $lighterBrandColor: #F1F8E9;
+  $accentColor: #DD2C00;
+} @else if $colorScheme == "pink" {
+  $primaryBrandColor: #C2185B;
+  $darkerBrandColor: #880E4F;
+  $lighterBrandColor: #FCE4EC;
+  $accentColor: #0091EA;
+} @else if $colorScheme == "red" {
+  $primaryBrandColor: #D32F2F;
+  $darkerBrandColor: #B71C1C;
+  $lighterBrandColor: #FFEBEE;
+  $accentColor: #304FFE;
+} @else if $colorScheme == "teal" {
+  $primaryBrandColor: #009688;
+  $darkerBrandColor: #00695C;
+  $lighterBrandColor: #E0F2F1;
+  $accentColor: #FF6D00;
+} @else {
+  // Default color selections: Modify these values to use your own color scheme.
+  $primaryBrandColor: #009688;
+  $darkerBrandColor: #00695C;
+  $lighterBrandColor: #E0F2F1;
+  $accentColor: #FF6D00;
+}
+
+$footerColor: lighten($lighterBrandColor, 5%);
+
+// This ensures that icons on the home page use 100% opacity
+// with the $primaryBrandColor. Otherwise, the icons inherit
+// opacity settings from the header or text is too dark.
+$homePageHeaderColor: #757575;
+
+$linkColor: $primaryBrandColor;
+$linkHoverColor: $darkerBrandColor;
+$codeColor: $darkerBrandColor;
+$codeBkColor: $lighterBrandColor;
+$wellColor: #FAFAFA;
+$textColor: #616161;
+$linkDisabledColor: $textColor;
+
+$textLogoFontFamily: "Kavoon", serif;
+
+$fontFamily: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$defaultLineHeight: 22px;
