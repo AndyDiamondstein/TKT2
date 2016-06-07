@@ -24,7 +24,7 @@
 $(document).ready(function() {
 
   /** Generated table of contents */
-  $.getScript("/assets/js/jekyll-table-of-contents.js", function() {
+  $.getScript("/TKT2/assets/js/jekyll-table-of-contents.js", function() {
     $('#toc').toc({ listType: 'ul' });
     $('#standard-menu-links>ul:first-child').
         addClass('nav navbar-nav navbar-right');
@@ -130,7 +130,7 @@ $(document).ready(function() {
   }).closest('li').addClass('active-item'); // parent should be <li> or <h4>
 
   /** Collapsible menus in left nav */
-  $.getScript("/assets/js/simple-expand.js", function() {
+  $.getScript("/TKT2/assets/js/simple-expand.js", function() {
     $('.submenu').simpleexpand();
     $('.active-item').closest('ul.content').css('display', 'block')
       .siblings('h4').removeClass('collapsed').addClass('expanded');
