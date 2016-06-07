@@ -1,11 +1,15 @@
 analytics:
-  id: 
+  id:
 
 # The default port number is 4000.
 port: 4000
+
+# Set baseurl to empty on preview site. On GitHub pages, the URL needs to
+# include the project name, but not on the preview site.
+baseurl:
 
 ### Comments
 comments:
   disqus:
     display: false
-    shortname: 
+    shortname:

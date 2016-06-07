@@ -2,10 +2,11 @@
 
 ### Basic project settings
 title: Toolkit Tester # SPECIFY YOUR PROJECT NAME [REQUIRED]
+baseurl: /TKT2
 description: "Testing the Repo Publishing Toolkit is fun for the whole family." # [HIGHLY RECOMMENDED]
-repo: https://github.com/AndyDiamondstein/ToolkitTester # SPECIFY YOUR GITHUB REPO URL [HIGHLY RECOMMENDED]
+repo: https://github.com/AndyDiamondstein/TKT2 # SPECIFY YOUR GITHUB REPO URL [HIGHLY RECOMMENDED]
 email: test@example.org # SPECIFY CONTACT EMAIL ADDRESS [OPTIONAL]
-website: https://github.com/AndyDiamondstein/ToolkitTester # [REQUIRED IF SHOWING SOCIAL MEDIA BUTTONS] SPECIFY URL WHERE CONTENT IS PUBLISHED -- e.g. www.grpc.io or grpc.github.io/
+website: http://andydiamondstein.github.io/TKT2 # [REQUIRED IF SHOWING SOCIAL MEDIA BUTTONS] SPECIFY URL WHERE CONTENT IS PUBLISHED -- e.g. www.grpc.io or grpc.github.io/
 copyright-text: # [OPTIONAL] SPECIFY DESIRED COPYRIGHT TEXT -- e.g. "© Site Toolkit authors 2016"
 copyright-text-link: # [OPTIONAL] SPECIFY LINK FOR COPYRIGHT TEXT
 
@@ -78,7 +79,7 @@ footer:
 # display in the areas where the logo typically displays.
 logo: /images/logo.png # Set to location of your logo -- e.g. /images/site-logo.png
 footer-logo: /images/grayscale-logo.png # Set to location of your logo for site footer -- e.g. /images/site-logo-grayscale.png
-text-logo: true
+text-logo: false
 text-logo-font: Kavoon
 
 ### Blog
