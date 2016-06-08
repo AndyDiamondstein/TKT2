@@ -1,3 +1,7 @@
+# Identify this as the config for the preview server.
+# This is used to create proper relative URLs.
+preview-server: true
+
 analytics:
   id:
 

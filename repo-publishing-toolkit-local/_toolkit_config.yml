@@ -151,7 +151,7 @@ sass:
   style: compressed
 
 ### Jekyll configuration and Markdown processing
-permalink: /:categories/:title/
+permalink: /blog/posts/:year-:month-:day-:title.html
 highlighter: pygments
 gems:
   - jekyll-sitemap
