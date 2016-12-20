@@ -3,7 +3,7 @@ layout: doc
 title: "Foo"
 ---
 
-Maecenas ligula magna, rhoncus vitae nisi non, varius molestie dolor.
+Blah blah blah. Maecenas ligula magna, rhoncus vitae nisi non, varius molestie dolor.
 Pellentesque mauris mi, blandit a justo sed, dictum fermentum sapien. Donec
 iaculis quam at dictum efficitur. Sed dapibus leo ut tincidunt blandit. In at
 felis erat. Donec eu viverra odio, eu eleifend sem. Cras aliquam nisl vel est
